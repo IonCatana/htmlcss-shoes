@@ -10,16 +10,20 @@
     clear: both;
 }
 /* Fine regola generale */
+/* Inizio html */
 html{
     scroll-behavior: smooth;
 }
+/* Fine html */
+/* Inizio container */
 .container{      
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif
 }
+/* Inizio nav */
 nav{
     position: fixed;
-    z-index: 2;  
+    z-index: 1;  
     float: right;
     top: 0; 
     right: 0;
@@ -27,18 +31,21 @@ nav{
 li{   
     float: left;            
     list-style: none;    
-    padding: 10px; 
     margin: 10px;
-    line-height: 10px;
-    border-radius: 50%; 
-    z-index: 2;     
-    background-color: white;
 }
 a{
+    display: block;
     text-decoration: none;
-    font-weight: 800;
+    font-weight: 800;       
+    background-color: white;   
+    height: 50px;
+    width: 50px;    
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;  
 }
-
+/* Fine nav */
+/* Inizio img */
 .img{    
     position: relative;    
     text-align: center;    
@@ -49,31 +56,34 @@ a{
 img{
     width: 50%;
 }
+/* Fine img */
+ /* Inizio testo */
 h1{
     width: 100%;    
-    font-size: 3vw; 
+    font-size: calc( 2vw + 20px);
     color: yellow;
 }
 .h1-yellow{
     width: 100%;    
-    font-size: 3vw;     
+    font-size: calc( 2vw + 20px); 
     color: green;    
 }
-.background-red{
-    position: relative;
+/* Fine testo */
+/* Inizio background color */
+.background-red{    
     width: 100%;  
     height: 100vh;
     background-color: red;    
 }
-.background-green{ 
-    position: relative; 
+.background-green{     
     width: 100%;  
     height: 100vh;
     background-color: green;
 }
-.background-yellow{ 
-    position: relative; 
+.background-yellow{      
     width: 100%;  
     height: 100vh;
     background-color: yellow;
 }
+/*  Fine background color */
+/* Fine container */
